@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# TEST(1)                        General Commands Manual                     TEST(1)
+#
+# NAME
+#      bin/test — run the suite
+#
+# SYNOPSIS
+#      bin/test [path ...]
+#
+# DESCRIPTION
+#      Runs sus over the suite.  There is nothing to compile: the binding is
+#      GObjectIntrospection::Loader reading ibus's typelib at require time.
+#
+#      What this does need is the typelib on GI_TYPELIB_PATH, which the dev
+#      shell in flake.nix provides.  Outside it, install your distribution's
+#      ibus-3.0 and point GI_TYPELIB_PATH at its girepository-1.0 directory.
+#
+# SEE ALSO
+#      sus(1), flake.nix
+#
+# ibus                            November 3, 2026                         TEST(1)
+
+set -o errexit
+set -o nounset
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$root"
+
+bundle exec sus "$@"

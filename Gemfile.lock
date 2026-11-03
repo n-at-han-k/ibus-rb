@@ -1,0 +1,37 @@
+PATH
+  remote: .
+  specs:
+    ibus (2.0.0)
+      gem_kit (~> 0.2)
+      gobject-introspection (~> 4.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    gem_kit (0.2.0)
+    gem_kit-release (0.3.3)
+      gem_kit (>= 0.1, < 1.0)
+      thor (~> 1.3)
+    glib2 (4.4.0)
+      native-package-installer (>= 1.0.3)
+      pkg-config (>= 1.3.5)
+    gobject-introspection (4.4.0)
+      glib2 (= 4.4.0)
+    lefthook (2.2.2)
+    native-package-installer (1.1.9)
+    pkg-config (1.6.6)
+    sus (0.38.0)
+    thor (1.5.0)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  gem_kit-release
+  ibus!
+  lefthook (~> 2.2)
+  sus
+
+BUNDLED WITH
+   2.7.2

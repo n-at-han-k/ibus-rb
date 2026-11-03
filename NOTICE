@@ -1,0 +1,43 @@
+Ibus for Ruby
+Copyright 2026 General Intelligence Systems
+
+This product includes software developed at The Matrix.org Foundation C.I.C.
+
+--------------------------------------------------------------------------------
+ibus
+--------------------------------------------------------------------------------
+
+The native extension under ext/ibus links ibus, the Rust
+implementation of the Olm and Megolm cryptographic ratchets. This gem is
+bindings for it and nothing else: every class it defines wraps a type of that
+crate.
+
+  https://github.com/matrix-org/ibus
+  Copyright 2021-2026 The Matrix.org Foundation C.I.C.
+  Licensed under the Apache License, Version 2.0
+
+--------------------------------------------------------------------------------
+matrix-rust-sdk
+--------------------------------------------------------------------------------
+
+matrix-rust-sdk is the reference for how these primitives are driven, and the
+primary consumer of ibus. Where logic here is derived from it, the
+derivation is noted at the point it appears.
+
+  https://github.com/matrix-org/matrix-rust-sdk
+  Copyright 2020-2026 The Matrix.org Foundation C.I.C.
+  Licensed under the Apache License, Version 2.0
+
+matrix-rust-sdk carries no NOTICE file of its own, so there is nothing further
+to propagate under section 4(d) of the License.
+
+--------------------------------------------------------------------------------
+On Fractal
+--------------------------------------------------------------------------------
+
+Fractal is a GTK Matrix client which is useful to read for how a client drives
+encryption, and it appears in no part of this product. It is licensed
+GPL-3.0-or-later, which is incompatible with the Apache License this work is
+distributed under, so no code or comment may be copied from it. Reading it to
+learn which operations a flow needs is fine; carrying its expression across is
+not.

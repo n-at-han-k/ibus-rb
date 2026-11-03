@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ibus (2.0.0)
+    ibus (1.0.0)
       gem_kit (~> 0.2)
       gobject-introspection (~> 4.3)
 
